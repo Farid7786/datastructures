@@ -1,0 +1,13 @@
+class Solution {
+public:
+    int xorOperation(int n, int start) {
+        int c=start,i=0;
+        int k=start+2;
+        for(i=1;i<n;i++)
+        {
+           c=(c^k);
+           k+=2;
+        }
+        return c;
+    }
+};
